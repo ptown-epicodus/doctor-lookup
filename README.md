@@ -11,7 +11,7 @@ This website Allows users to search for doctors based on medical issue. It uses 
 
 ## Setup/Installation Requirements
 1. Set project root as working directory in CLI.
-2. Run `$ echo >> .env "exports.apiKey = '{API_KEY}'"`.
+2. Run `$ echo >> .env "exports.apiKey = '{API_KEY}';"`.
 3. Run `$ npm install`.
 4. Run `$ bower install`.
 5. Run `$ gulp build`.

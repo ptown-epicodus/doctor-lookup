@@ -10,7 +10,19 @@
   </head>
   <body>
     <div class='container'>
-      <h1>Doctor Lookup</h1>
+      <div class='jumbotron'>
+        <h1>Doctor Lookup</h1>
+      </div>
+
+      <form id='query'>
+        <label for='medical-issue'>Medical issue:</label>
+        <input type='text' id='medical-issue' name='medical-issue'>
+
+        <button type='submit'>Lookup</button>
+      </form>
+
+      <div id='results'>
+      </div>
     </div>
   </body>
 </html>
