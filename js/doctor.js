@@ -29,11 +29,19 @@ var displayResults = function(results) {
   $('#results').append("<h1>Search Results</h1><ul>");
   results.forEach(function(element) {
     $('#results').append(
-      "<li>" + element.doctorFirstName + " " + element.doctorLastName + ", " + element.doctorTitle + "</li>"
+      "<li>" +
+      element.doctorFirstName + " " + element.doctorLastName + ", " + element.doctorTitle +
+      "<br>" + format(element.phones[0].number) +
+      "</li>"
     );
   });
   $('#results').append("</ul>");
   $('#results').show();
+};
+
+var format = function(phoneNumber) {
+  var matches = phoneNumber.match(/(\d{3})(\d{3})(\d{4})/);
+  return '(' + matches[1] + ') ' + matches[2] + '-' + matches[3];
 };
 
 exports.doctorListModule = DoctorList;
