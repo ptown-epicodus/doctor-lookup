@@ -17,26 +17,26 @@ DoctorList.prototype.populate = function() {
           doctorTitle: element.profile.title
         };
       });
-      displayResults(this.list);
+      displayResults(this);
     })
    .fail(function(error) {
       console.log("fail");
     });
 };
 
-var displayResults = function(results) {
+var displayResults = function(result) {
   $('#results').html('');
-  $('#results').append("<h1>Search Results</h1><ul>");
-  results.forEach(function(element) {
+  $('#results').append("<ul>");
+  result.list.forEach(function(element) {
     $('#results').append(
       "<li>" +
-      element.doctorFirstName + " " + element.doctorLastName + ", " + element.doctorTitle +
+      element.doctorFirstName + " " + element.doctorLastName + (element.doctorTitle ? ", " + element.doctorTitle : "") +
       "<br>" + format(element.phones[0].number) +
       "</li>"
     );
   });
   $('#results').append("</ul>");
-  $('#results').show();
+  $('#results-structure').show();
 };
 
 var format = function(phoneNumber) {

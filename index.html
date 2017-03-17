@@ -14,14 +14,32 @@
         <h1>Doctor Lookup</h1>
       </div>
 
-      <form id='query'>
-        <label for='medical-issue'>Medical issue:</label>
-        <input type='text' id='medical-issue' name='medical-issue'>
+      <div class='panel panel-info'>
+        <div class='panel-heading'>
+          <h1 class='panel-title'>Search for nearby doctors<h1>
+        </div>
+        <div class='panel-body'>
+          <form id='query'>
+            <div class='form-group'>
+              <label for='medical-issue'>Medical issue:</label>
+              <input type='text' id='medical-issue' name='medical-issue' class='form-control'>
+            </div>
 
-        <button type='submit'>Lookup</button>
-      </form>
+            <button type='submit' class='btn btn-info'>Lookup</button>
+          </form>
+        </div>
+      </div>
 
-      <div id='results'>
+      <div id='results-structure'>
+        <div class='panel panel-success'>
+          <div class='panel-heading'>
+            <h1>Search Results:</h1>
+          </div>
+          <div class='panel-body'>
+            <div id='results'>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
