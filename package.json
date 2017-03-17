@@ -1,0 +1,11 @@
+{
+  "name": "doctor-lookup",
+  "version": "1.0.0",
+  "description": "Allows users to search for doctors based on medical issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick McGreevy",
+  "license": "ISC"
+}

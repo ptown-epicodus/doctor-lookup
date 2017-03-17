@@ -1,0 +1,17 @@
+{
+  "name": "doctor-lookup",
+  "description": "Allows users to search for doctors based on medical issue",
+  "main": "index.js",
+  "authors": [
+    "Patrick McGreevy"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
